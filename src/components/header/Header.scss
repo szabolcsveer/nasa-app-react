@@ -1,0 +1,36 @@
+@import "../../styles/variables";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  background-color: $color-nasa-midnight-blue;
+  .left-side {
+    .button {
+      height: 4rem;
+      border: none;
+      cursor: pointer;
+      background: none;
+      font-family: Montserrat, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      font-size: large;
+
+      .route {
+        text-decoration: none;
+        color: white;
+      }
+    }
+    .button:focus {
+      outline: none;
+    }
+    .button:hover {
+      background-color: $color-nasa-orioles-orange;
+    }
+  }
+}
+
+.logo {
+  height: 100%;
+  object-fit: contain;
+  margin-right: 1rem;
+}
