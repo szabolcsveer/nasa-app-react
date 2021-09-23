@@ -1,0 +1,38 @@
+.media-container {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  // justify-content: center;
+  // margin-left: -30px; /* gutter size offset */
+  // width: 100%;
+}
+
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+.image {
+  width: 100%;
+  max-width: 35rem;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .pagename {
+    border: 1px solid lightslategray;
+    border-radius: 3px;
+    margin: 0.2rem;
+    padding: 5px;
+    list-style-type: none;
+    cursor: pointer;
+  }
+
+  .previous-class,
+  .next-class {
+    list-style-type: none;
+  }
+}

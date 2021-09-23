@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import "./Apod.scss";
 const API_KEY = process.env.REACT_APP_NASA_API_KEY;
 
 export interface AstronomyPictureOfTheDay {
@@ -30,7 +30,19 @@ function Apod() {
     fetchData();
   }, []);
 
-  return <div>{apod?.explanation}</div>;
+  return (
+    <div className="container">
+      <h1 className="title">{apod?.title}</h1>
+      <section className="section">
+        {apod?.media_type === "image" ? (
+          <img className="image" src={apod?.url} alt="astronomy_picture_of_the_day" />
+        ) : (
+            <video src={apod?.url}></video>
+          )}
+        <p className="explanation">{apod?.explanation}</p>
+      </section>
+    </div>
+  );
 }
 
 export default Apod;

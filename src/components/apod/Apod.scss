@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+  .title {
+    text-align: center;
+  }
+
+  .section {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 1rem;
+  }
+
+  .image {
+    width: 30%;
+    height: 50%;
+  }
+}
+
+.explanation{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
